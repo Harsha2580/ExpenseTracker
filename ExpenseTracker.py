@@ -2,8 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import sqlite3
 import time
-profilename=""
-t = 11
+
 def connect():
     conn=sqlite3.connect("loginpage.db")
     cur=conn.cursor()
@@ -98,6 +97,8 @@ def login():
         e2.delete(0,END)
         messagebox.showinfo('oops something wrong', 'Invalid credentials')
 
+profilename=""
+t = 11
 def appwindow():
 
     def connect1():
